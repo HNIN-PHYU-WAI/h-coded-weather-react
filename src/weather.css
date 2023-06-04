@@ -1,0 +1,99 @@
+.weather{
+  width: 30rem;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.weather form input{
+  padding: 0.5rem 1rem ;
+  font-size: 1.3rem;
+   border-radius: 0.5rem;
+}
+
+.weather form input[type=search]{    
+  outline: none;
+  border: transparent;
+
+}
+
+.weather form input[type=submit]{
+  float: right;
+  padding: 0.5rem 1rem;
+  border: none;
+      
+}
+
+.currentCity h1{
+  font-size: 2.4rem;
+}
+
+.currentCity img{
+  bottom:-25%;
+  left: 15%;
+}
+
+.currentCity ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content:space-evenly;
+  border-radius:0.5rem;
+  padding: 1rem 0;
+}
+
+.currentCity li{
+  display: inline;
+}
+
+.temperatureConversion{
+  position: relative;
+}
+
+.temperatureConversion h2{
+  font-size: 5rem;
+}
+
+.temperatureConversion small{
+  position: absolute;
+  top: 20%;
+  right: -1%;
+}
+
+.temperatureConversion small a, .Footer p a{
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#light .temperatureConversion small a, #light .Footer p a{
+  color: var(--dark-mode-color);
+}
+
+#light .weather form input{
+  color: var(--dark-mode-color);
+  background: var(--light-mode-color);
+  box-shadow:  8px 8px 22px #c9d0d7,
+  -8px -8px 22px #fbffff;
+}
+
+
+#light .currentCity ul{
+  background: linear-gradient(145deg, #f2faff, #cbd3da);
+  box-shadow:  8px 8px 22px #c9d0d7,-8px -8px 22px #fbffff;
+        
+}
+
+#dark .temperatureConversion small a, #dark .Footer p a{
+  color: var(--light-mode-color);
+}
+
+
+#dark .weather form input{
+  color: var(--light-mode-color);
+  background: #2f3643;
+  box-shadow:  12px 12px 24px #242a34,-12px -12px 24px #3a4252;
+}
+
+#dark .currentCity ul{
+  background: linear-gradient(145deg, #323a48, #2a313c);
+  box-shadow:  12px 12px 24px #242a34,-12px -12px 24px #3a4252;
+}

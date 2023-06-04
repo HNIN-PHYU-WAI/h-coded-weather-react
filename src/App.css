@@ -1,1 +1,16 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+#light{
+  background-color: var(--light-mode-color);
+  color: var(--dark-mode-color);
+}
+
+#dark{
+  background-color: var(--dark-mode-color);
+  color: var(--light-mode-color);
+}
